@@ -1,0 +1,26 @@
+model:
+  name: "MobileIE"
+
+  MobileIE:
+    rep_scale: 4
+    channels: 12
+
+
+
+dataset:
+  name: "NUS"
+
+  ColorChecker:
+    path: '/dataset/CC_full'
+    folds_num: 0
+
+  NUS:
+    path: '/dataset/NUS_full'
+    folds: 'exclude'
+    camera_name: 'SonyA57'
+    supported_cameras: False
+
+  Cube:
+    path: '/dataset/cube_raw'
+
+exp_name: debug
