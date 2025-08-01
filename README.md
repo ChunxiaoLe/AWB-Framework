@@ -1,5 +1,7 @@
 # AWB-Framework
-A framework for the training and testing of CNN-based AWB methods 
+A framework for training and testing CNN-based AWB methods 
+
+环境在environment.yaml
 
 # 模型训练说明
 
@@ -124,7 +126,6 @@ parser.add_argument('--eps', type=float, default=EPS)
 ```
 
 ## Step4: Trainer和Tester设置
-**需要将模型在三个数据集中的测试结果同步到**[Notion项目页](https://www.notion.so/Cross-camera-AWB-23e6d9c858f8806ebb45ce7b72aa9024)
 
 `train.py`中已有基础的训练框架，最好是在该框架下进行模型的训练和框架微调
 如有特殊需求，最好重建一个`train_XX.py`文件进行训练
